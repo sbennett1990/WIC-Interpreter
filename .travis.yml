@@ -3,4 +3,4 @@ solution: WICI.sln
 sudo: true
 script:
   - sudo apt-get update && sudo apt-get install -y mono-complete
-  - xbuild /p:Configuration=Release WICI.sln
+  - fsharpc Stack.fs Table.fs Instructions.fs WICI.fs
