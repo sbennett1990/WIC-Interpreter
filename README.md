@@ -12,7 +12,7 @@
 Assuming Fsc.exe (the F# compiler included with the .NET Framework) is part of 
 your %PATH%:
 
-`Fsc.exe Stack.fs Table.fs Instructions.fs WICI.fs --platform:anycpu --warn:5 -o:WICI.exe`
+`Fsc.exe Stack.fs Table.fs Instructions.fs WICI.fs --platform:anycpu --warn:4 -o:WICI.exe`
 
 ## Use
 
