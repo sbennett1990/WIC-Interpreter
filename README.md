@@ -1,6 +1,8 @@
 # WIC-Interpreter
 
-"WIC" stands for Wren Intermediate Code.
+"WIC" stands for Wren Intermediate Code. Wren is a small imperative language mostly used for 
+teaching. It is taken from the book _Syntax and Semantics of Programming Languages_, by Ken Slonneger 
+and Barry Kurtz, http://homepage.cs.uiowa.edu/~slonnegr/plf/Book/
 
 ## Build
 
