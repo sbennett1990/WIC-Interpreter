@@ -1,2 +1,4 @@
 language: fsharp
 solution: WICI.sln
+script:
+  - xbuild /p:Configuration=Release WICI.sln
