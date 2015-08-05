@@ -1,7 +1,7 @@
 language: fsharp
 solution: WICI.sln
 sudo: true
-before-install:
+before-script:
   - sudo apt-get update && sudo apt-get install -y mono-complete
 script:
   - xbuild /p:Configuration=Release WICI.sln
