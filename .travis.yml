@@ -1,3 +1,4 @@
 language: fsharp
 script: 
+  - whereis fsharpc
   - fsharpc Stack.fs Table.fs Instructions.fs WICI.fs
