@@ -24,10 +24,10 @@ your %PATH%:
 ## Use
 
 #### Unix
-`mono WICI.exe <code.wic>`
+`mono WICI.exe <code-file>.wic`
 
 #### Windows
-`.\WICI.exe <code.wic>`
+`.\WICI.exe <code-file>.wic`
 
 ## About WIC
 WIC is a very simple, stack-based intermediate language. The only
