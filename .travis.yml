@@ -1,6 +1,6 @@
 language: fsharp
 sudo: true
 script: 
-  - sudo apt-get install fsharp
+  - sudo apt-get install -y fsharp
   - whereis fsharpc
   - fsharpc Stack.fs Table.fs Instructions.fs WICI.fs
