@@ -6,21 +6,21 @@
 
 #### Unix
 
-    `fsharpc Stack.fs Table.fs Instructions.fs WICI.fs`
+`fsharpc Stack.fs Table.fs Instructions.fs WICI.fs`
 
 #### Windows
 Assuming Fsc.exe (the F# compiler included with the .NET Framework) is part of 
 your %PATH%:
 
-    `Fsc.exe Stack.fs Table.fs Instructions.fs WICI.fs --platform:anycpu --warn:5 -o:WICI.exe`
+`Fsc.exe Stack.fs Table.fs Instructions.fs WICI.fs --platform:anycpu --warn:5 -o:WICI.exe`
 
 ## Use
 
 #### Unix
-    `mono WICI.exe <code.wic>`
+`mono WICI.exe <code.wic>`
 
 #### Windows
-    `.\WICI.exe <code.wic>`
+`.\WICI.exe <code.wic>`
 
 ## About WIC
 WIC is a very simple, stack-based intermediate language. The only
