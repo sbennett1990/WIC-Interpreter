@@ -5,11 +5,13 @@
 ## Build
 
 #### Unix
+
     `fsharpc Stack.fs Table.fs Instructions.fs WICI.fs`
 
 #### Windows
 Assuming Fsc.exe (the F# compiler included with the .NET Framework) is part of 
 your %PATH%:
+
     `Fsc.exe Stack.fs Table.fs Instructions.fs WICI.fs --platform:anycpu --warn:5 -o:WICI.exe`
 
 ## Use
@@ -40,7 +42,7 @@ two forms of the jump instruction are:
 The `nop` instruction does nothing. 
 
 ### Test statements
-Test statements pop the a value off the top of the stack and compare
+Test statements pop a value off the top of the stack and compare
 it with zero, pushing either 1 (true) or 0 (false) back on to the
 stack. The six test instructions are:
 
