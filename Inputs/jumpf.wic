@@ -1,0 +1,12 @@
+   get A
+   get B
+   push A
+   push B
+   sub
+   tstlt
+   jf L1
+   put A
+   halt
+L1 label
+   put B
+   halt

@@ -1,0 +1,10 @@
+   get A
+   get B
+   push A
+   push B
+   sub
+   tstgt
+   not
+   pop R
+   put R
+   halt

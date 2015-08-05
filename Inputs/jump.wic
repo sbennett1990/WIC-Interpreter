@@ -1,0 +1,7 @@
+   get A
+   get B
+   j L1
+   put A
+L1 label
+   put B
+   halt

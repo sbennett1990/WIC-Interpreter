@@ -1,0 +1,16 @@
+#  A > B or B > C
+   get A
+   get B
+   get C
+   push A
+   push B
+   sub
+   tstgt
+   push B
+   push C
+   sub
+   tstgt
+   or
+   pop R
+   put R
+   halt

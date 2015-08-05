@@ -1,0 +1,32 @@
+    push 100
+    pop M
+    push 75
+    pop N
+L1      label
+       push    M
+       push    N
+       sub
+       tstne
+       jf      L2
+       push    M
+       push    N
+       sub
+       tstlt
+       jf      L3
+       push    N
+       push    M
+       sub
+       pop     N
+       j       L4
+L3      label
+       push    M
+       push    N
+       sub
+       pop     M
+L4      label
+       j       L1
+L2      label
+       push    M
+       pop     T1
+       put     T1
+       halt

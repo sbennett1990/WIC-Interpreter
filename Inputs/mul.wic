@@ -1,0 +1,8 @@
+   get A
+   get B
+   push A
+   push B
+   mul
+   pop R
+   put R
+   halt

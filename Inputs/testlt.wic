@@ -1,0 +1,10 @@
+    get    A    
+    get    B    
+    push    A    
+     push B    
+     sub       
+     tstlt     
+     pop Result   
+     put Result  
+     halt
+
