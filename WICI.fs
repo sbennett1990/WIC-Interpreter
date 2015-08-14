@@ -18,6 +18,7 @@ module WICI
      * Takes as input a list of tuples where each tuple is a wic instruction
      * in the form (opcode, operand).  Interprets each instruction until halt
      * is executed.
+     * 
      * @params - instructions - list of tuples
      *         - state - state of the machine represented by a Stack, 
      *                   SymbolTable, JumpTable and PC
@@ -94,6 +95,7 @@ module WICI
     (**
      * Takes as input the a list of instructions.  Parses the instructions
      * and returns a list of tuples in the form: (opcode, operand)
+     * 
      * @param - list of instructions where each element is in the form:
      *          "   opcode operand  "
      * @returns - list of tuples in the form: (opcode, operand)
@@ -103,7 +105,7 @@ module WICI
         match input with
         | [] -> []
         | head::tail ->
-            //split on whitespace and get rid of the "" elements
+            // split on whitespace and get rid of the "" elements
             let pieces = Array.filter (fun ele -> not(ele = "")) 
                                       (head.Split [|' '|]) 
             if (Array.length pieces = 0) || (pieces.[0] = "#") then
@@ -124,6 +126,7 @@ module WICI
      * builds the jump table for the wic instructions.  Since label instructions
      * were change to nop instructions, the labels are the operand of the nop
      * instructions.  Each label and address is added to the jump table.
+     * 
      * @params - instr - list of tuples in the form (opcode, operand)
      *           addr - starting value of PC (0 when first called)
      * @returns - jump table
@@ -160,11 +163,11 @@ module WICI
                 printfn "%A does not exist\nUsage: mono wi.exe <filename>" file 
             | StackEmpty ->
                 printfn "Stack underflow error. Execution halted."
-             | SymbolNotFound ->
+            | SymbolNotFound ->
                 printfn "Table retrieve failed. Symbol not found. Execution halted."
             | InstructionNotFound -> 
                 printfn "instruction not found. Execution halted." 
-             | ProgramEmpty -> 
+            | ProgramEmpty -> 
                 printfn "Program file empty. Execution halted." 
             | DivideByZero -> 
                 printfn "Divide by zero. Execution halted." 
